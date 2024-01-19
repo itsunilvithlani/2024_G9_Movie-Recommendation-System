@@ -1,8 +1,13 @@
-# React + Vite
+# Movie Recommendation System
+# React + Vite + Python
+## Project Overview
+The Movie Recommendation System is a dynamic and user-centric platform designed 
+to revolutionize the way users discover and engage with movies. From a product 
+perspective, it functions as an intelligent intermediary between users and a vast array 
+of movies, utilizing advanced machine learning algorithms to tailor recommendations to 
+individual preferences.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run project:
+1) Clone the git repo to your local machine.
+2) Open project and run this command.
+  npm run dev
