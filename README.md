@@ -10,4 +10,5 @@ individual preferences.
 To run project:
 1) Clone the git repo to your local machine.
 2) Open project and run this command.
-  npm run dev
+   
+    > npm run dev
