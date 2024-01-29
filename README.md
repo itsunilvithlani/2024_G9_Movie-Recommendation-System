@@ -8,7 +8,5 @@ of movies, utilizing advanced machine learning algorithms to tailor recommendati
 individual preferences.
 
 To run project:
-1) Clone the git repo to your local machine.
-2) Open project and run this command.
-   
-    > npm run dev
+1) Click here
+    > [CineSpectra](https://cine-spectra.vercel.app/)
