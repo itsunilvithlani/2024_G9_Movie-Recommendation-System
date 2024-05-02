@@ -1,0 +1,109 @@
+@import "../../mixins.scss";
+.historyPage {
+    min-height: 700px;
+    padding-top: 100px;
+    // .pageHeader {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-bottom: 25px;
+    //     flex-direction: column;
+    //     @include md {
+    //         flex-direction: row;
+    //     }
+    // }
+    .history_title {
+        padding-bottom: 2%;
+        display: flex;
+        flex-direction: row;
+        font-size: 24px;
+        line-height: 34px;
+        color: white;
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 0;
+        }
+        button {
+            margin-left: 78%;
+            width: 170px;
+            height: 35px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: red;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+            background: #e62222;
+           }
+           
+           button, button span {
+            transition: 200ms;
+           }
+           
+           button .text {
+            transform: translateX(25px);
+            color: white;
+            font-weight: bold;
+           }
+           
+           button .icon {
+            margin-left: 1rem;
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(110px);
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           
+           button svg {
+            width: 15px;
+            fill: #eee;
+           }
+           
+           button:hover {
+            background: #ff3636;
+           }
+           
+           button:hover .text {
+            color: transparent;
+           }
+           
+           button:hover .icon {
+            width: 150px;
+            border-left: none;
+            transform: translateX(0);
+           }
+           
+           button:focus {
+            outline: none;
+           }
+           
+           button:active .icon svg {
+            transform: scale(0.8);
+           }
+
+    }
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+        margin-bottom: 50px;
+        @include md {
+            gap: 20px;
+        }
+        .movieCard {
+            .posterBlock {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .emptyHistory{
+        margin-top: 10px;
+        color: var(--black-lighter);
+        font-size: 25px;
+    }
+}

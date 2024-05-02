@@ -1,0 +1,90 @@
+@import "../../mixins.scss";
+.search{
+    width: 100%;
+    align-items: right;
+    display: flex;
+    
+    flex-direction: row;
+    @include md {
+        flex-direction: row;
+    }
+    .react-select-container {
+        &.sortbyDD {
+            width: calc(100% - 100px);
+            
+            flex-shrink: 0;
+            @include md {
+                width: calc(100% - 150px);
+            }
+        }
+        .react-select__control {
+            text-align: left;
+            
+            height: 50px;
+            // width: 85%;
+            border: 0;
+            outline: 0;
+            box-shadow: none;
+            background-color: white;
+            border-radius: 30px 0 0 30px;
+            padding: 0 10px;
+            font-size: 14px;
+            @include md {
+                height: 60px;
+                font-size: 20px;
+                padding: 0 15px;
+            }
+            .react-select__value-container {
+                .react-select__placeholder,
+                .react-select__input-container {
+                    color: grey;
+                    margin: 0 10px; 
+                }
+            }
+            .react-select__single-value {
+                color: black;
+                    
+            }
+            .react-select__multi-value {
+                background-color: var(--black3);
+                border-radius: 10px;
+                .react-select__multi-value__label {
+                    color: white;
+                }
+                .react-select__multi-value__remove {
+                    background-color: transparent;
+                    color: white;
+                    cursor: pointer;
+                    &:hover {
+                        color: var(--black-lighter);
+                    }
+                }
+            }
+        }
+        .react-select__menu {   
+            top: 62px;
+            margin: 0;
+            background-color: transparent;
+            padding: 0;
+            .react-select__option--is-focused{
+                background-color: var(--black3);
+            }
+        }
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        background: var(--gradient);
+        color: white;
+        outline: 0;
+        border: 0;
+        border-radius: 0 30px 30px 0;
+        font-size: 16px;
+        cursor: pointer;
+        @include md {
+            width: 150px;
+            height: 60px;
+            font-size: 18px;
+        }
+    }
+}
